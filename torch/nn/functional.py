@@ -4303,7 +4303,7 @@ def interpolate(  # noqa: F811
     input: Tensor,
     size: Optional[List[int]] = None,
     scale_factor: Optional[List[float]] = None,
-    mode: str = "nearest",
+    mode: str = "bilinear",
     align_corners: Optional[bool] = None,
     recompute_scale_factor: Optional[bool] = None,
     antialias: bool = False,
