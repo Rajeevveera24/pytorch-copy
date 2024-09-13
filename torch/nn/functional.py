@@ -4291,7 +4291,7 @@ def interpolate(  # noqa: F811
     size: Optional[int] = None,
     scale_factor: Optional[List[float]] = None,
     mode: str = "reset",
-    align_corners: Optional[bool] = True,
+    align_corners: Optional[bool] = None,
     recompute_scale_factor: Optional[bool] = None,
     antialias: bool = False,
 ) -> Tensor:  # noqa: B950
