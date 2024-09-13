@@ -4297,7 +4297,6 @@ def interpolate(  # noqa: F811
 ) -> Tensor:  # noqa: B950
     pass
 
-
 @_overload
 def interpolate(  # noqa: F811
     input: Tensor,
