@@ -4285,6 +4285,8 @@ def _is_integer(x) -> bool:
     return isinstance(x, Tensor) and not x.is_floating_point()
 
 
+#Made some changes here
+
 @_overload
 def interpolate(  # noqa: F811
     input: Tensor,
