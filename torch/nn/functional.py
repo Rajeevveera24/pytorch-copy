@@ -642,7 +642,7 @@ def _fractional_max_pool3d(
             kernel_size,
             output_size=output_size,
             output_ratio=output_ratio,
-            return_indices=return_indices,
+            return_indices=return_indices
             _random_samples=_random_samples,
         )
     return fractional_max_pool3d_with_indices(
@@ -4290,7 +4290,7 @@ def interpolate(  # noqa: F811
     input: Tensor,
     size: Optional[int] = None,
     scale_factor: Optional[List[float]] = None,
-    mode: str = "bicubic",
+    mode: str = "bilinear",
     align_corners: Optional[bool] = True,
     recompute_scale_factor: Optional[bool] = None,
     antialias: bool = False,
