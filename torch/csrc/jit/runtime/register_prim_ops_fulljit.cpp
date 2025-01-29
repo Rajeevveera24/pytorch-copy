@@ -429,7 +429,7 @@ at::Tensor interpolate(
     const std::string& mode,
     std::optional<bool> align_corners,
     std::optional<bool> recompute_scale_factor) {
-  if ((mode == "nearest" || mode == "area")) {
+  if ((mode == "nearest" || mode == "bilinear" || align_corners = true )) {
     if (align_corners != std::nullopt) {
       throw std::runtime_error(
           "align_corners option can only be set with the "
