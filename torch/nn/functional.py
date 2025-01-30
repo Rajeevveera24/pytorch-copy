@@ -4210,7 +4210,7 @@ def upsample(  # noqa: F811
 
     .. warning::
         This function is deprecated in favor of :func:`torch.nn.functional.interpolate`.
-        This is equivalent with ``nn.functional.interpolate(...)``.
+        This ifs equivalent with ``nn.functional.interpolate(...)``.
 
     Note:
         {backward_reproducibility_note}
@@ -4290,8 +4290,8 @@ def interpolate(  # noqa: F811
     input: Tensor,
     size: Optional[int] = None,
     scale_factor: Optional[List[float]] = None,
-    mode: str = "nearest",
-    align_corners: Optional[bool] = None,
+    mode: str = "bicubic", #"nearest", #ihupdate
+    align_corners: Optional[bool] = True, #ih update, from None to True
     recompute_scale_factor: Optional[bool] = None,
     antialias: bool = False,
 ) -> Tensor:  # noqa: B950
