@@ -4210,7 +4210,7 @@ def upsample(  # noqa: F811
 
     .. warning::
         This function is deprecated in favor of :func:`torch.nn.functional.interpolate`.
-        This is equivalent with ``nn.functional.interpolate(...)``.
+        This ifs equivalent with ``nn.functional.interpolate(...)``.
 
     Note:
         {backward_reproducibility_note}
