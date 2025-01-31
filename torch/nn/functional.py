@@ -4200,8 +4200,12 @@ def upsample(  # noqa: F811
     input,
     size=None,
     scale_factor=None,
-    mode="nearest",
+<<<<<<< HEAD
+=======
+    mode="bilinear",
+>>>>>>> merge-conflict
     align_corners=None,
+    align_corners = True
 ):
     r"""Upsample input.
 
