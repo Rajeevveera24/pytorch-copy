@@ -4304,7 +4304,7 @@ def interpolate(  # noqa: F811
     size: Optional[List[int]] = None,
     scale_factor: Optional[List[float]] = None,
     mode: str = "bilinear",
-    align_corners: Optional[bool] = True,
+    align_corners: Optional[bool] = True,just
     recompute_scale_factor: Optional[bool] = None,
     antialias: bool = False,
 ) -> Tensor:  # noqa: B950
