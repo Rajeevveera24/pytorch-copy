@@ -4290,8 +4290,9 @@ def interpolate(  # noqa: F811
     input: Tensor,
     size: Optional[int] = None,
     scale_factor: Optional[List[float]] = None,
-    mode: str ="bicubic", #"nearest", # Jenny's change starts here
-    align_corners: Optional[bool] = True, #None #Jenny's other change 
+    # mode: str = "nearest", # Jenny's Change starts here
+    mode: str = "bilinear",
+    align_corners: Optional[bool] = True,
     recompute_scale_factor: Optional[bool] = None,
     antialias: bool = False,
 ) -> Tensor:  # noqa: B950
